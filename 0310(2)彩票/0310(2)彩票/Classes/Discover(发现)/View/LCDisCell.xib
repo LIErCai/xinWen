@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="91" id="kFs-G3-jCD" customClass="LCDisCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kFs-G3-jCD" id="7KD-oP-Jfq">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="wuk-T2-Uzs">
+                        <rect key="frame" x="10" y="14" width="60" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="0PL-RE-0Jr"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oAb-Ss-wNs">
+                        <rect key="frame" x="197" y="10" width="80" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="CcZ-AA-Mqs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟着高手买,奖金一起坑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1o-Ls-o6l">
+                        <rect key="frame" x="15" y="59" width="175" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oAb-Ss-wNs" secondAttribute="bottom" constant="10" id="4Yt-hh-dOH"/>
+                    <constraint firstItem="P1o-Ls-o6l" firstAttribute="top" secondItem="wuk-T2-Uzs" secondAttribute="bottom" constant="10" id="HDv-qx-Bqr"/>
+                    <constraint firstItem="wuk-T2-Uzs" firstAttribute="top" secondItem="7KD-oP-Jfq" secondAttribute="top" constant="14" id="Jr2-xu-tY7"/>
+                    <constraint firstItem="oAb-Ss-wNs" firstAttribute="top" secondItem="7KD-oP-Jfq" secondAttribute="top" constant="10" id="LLi-76-Npu"/>
+                    <constraint firstItem="wuk-T2-Uzs" firstAttribute="leading" secondItem="7KD-oP-Jfq" secondAttribute="leading" constant="10" id="aX2-tk-ZDl"/>
+                    <constraint firstAttribute="trailing" secondItem="oAb-Ss-wNs" secondAttribute="trailing" constant="10" id="gXc-oF-yse"/>
+                    <constraint firstItem="P1o-Ls-o6l" firstAttribute="leading" secondItem="7KD-oP-Jfq" secondAttribute="leading" constant="15" id="iOy-DI-elt"/>
+                    <constraint firstAttribute="bottom" secondItem="P1o-Ls-o6l" secondAttribute="bottom" constant="10" id="kgJ-2b-hyu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="482" y="241.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="discovery_groupBuy_icon" width="113" height="67"/>
+        <image name="discovery_groupBuy_title" width="54" height="23"/>
+    </resources>
+</document>
