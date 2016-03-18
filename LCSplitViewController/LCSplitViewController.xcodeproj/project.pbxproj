@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841474611C9AA54000512FFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474601C9AA54000512FFB /* main.m */; };
+		841474641C9AA54000512FFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474631C9AA54000512FFB /* AppDelegate.m */; };
+		841474671C9AA54000512FFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474661C9AA54000512FFB /* ViewController.m */; };
+		8414746A1C9AA54000512FFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841474681C9AA54000512FFB /* Main.storyboard */; };
+		8414746C1C9AA54000512FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414746B1C9AA54000512FFB /* Assets.xcassets */; };
+		8414746F1C9AA54000512FFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414746D1C9AA54000512FFB /* LaunchScreen.storyboard */; };
+		8414747A1C9AA68E00512FFB /* LCFoodTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474791C9AA68E00512FFB /* LCFoodTypeTableViewController.m */; };
+		8414747C1C9AA6F900512FFB /* Html in Resources */ = {isa = PBXBuildFile; fileRef = 8414747B1C9AA6F900512FFB /* Html */; };
+		8414748F1C9AA72800512FFB /* food_types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414747E1C9AA72800512FFB /* food_types.plist */; };
+		841474901C9AA72800512FFB /* type_10_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414747F1C9AA72800512FFB /* type_10_foods.plist */; };
+		841474911C9AA72800512FFB /* type_11_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474801C9AA72800512FFB /* type_11_foods.plist */; };
+		841474921C9AA72800512FFB /* type_12_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474811C9AA72800512FFB /* type_12_foods.plist */; };
+		841474931C9AA72800512FFB /* type_13_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474821C9AA72800512FFB /* type_13_foods.plist */; };
+		841474941C9AA72800512FFB /* type_14_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474831C9AA72800512FFB /* type_14_foods.plist */; };
+		841474951C9AA72800512FFB /* type_15_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474841C9AA72800512FFB /* type_15_foods.plist */; };
+		841474961C9AA72800512FFB /* type_16_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474851C9AA72800512FFB /* type_16_foods.plist */; };
+		841474971C9AA72800512FFB /* type_1_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474861C9AA72800512FFB /* type_1_foods.plist */; };
+		841474981C9AA72800512FFB /* type_2_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474871C9AA72800512FFB /* type_2_foods.plist */; };
+		841474991C9AA72800512FFB /* type_3_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474881C9AA72800512FFB /* type_3_foods.plist */; };
+		8414749A1C9AA72800512FFB /* type_4_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841474891C9AA72800512FFB /* type_4_foods.plist */; };
+		8414749B1C9AA72800512FFB /* type_5_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414748A1C9AA72800512FFB /* type_5_foods.plist */; };
+		8414749C1C9AA72800512FFB /* type_6_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414748B1C9AA72800512FFB /* type_6_foods.plist */; };
+		8414749D1C9AA72800512FFB /* type_7_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414748C1C9AA72800512FFB /* type_7_foods.plist */; };
+		8414749E1C9AA72800512FFB /* type_8_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414748D1C9AA72800512FFB /* type_8_foods.plist */; };
+		8414749F1C9AA72800512FFB /* type_9_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414748E1C9AA72800512FFB /* type_9_foods.plist */; };
+		841474C21C9AA7E400512FFB /* LCFoodType.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474C11C9AA7E400512FFB /* LCFoodType.m */; };
+		841474D91C9AAC6A00512FFB /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474C61C9AAC6A00512FFB /* MJExtensionConst.m */; };
+		841474DA1C9AAC6A00512FFB /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474C81C9AAC6A00512FFB /* MJFoundation.m */; };
+		841474DB1C9AAC6A00512FFB /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474CA1C9AAC6A00512FFB /* MJProperty.m */; };
+		841474DC1C9AAC6A00512FFB /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474CC1C9AAC6A00512FFB /* MJPropertyKey.m */; };
+		841474DD1C9AAC6A00512FFB /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474CE1C9AAC6A00512FFB /* MJPropertyType.m */; };
+		841474DE1C9AAC6A00512FFB /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474D01C9AAC6A00512FFB /* NSObject+MJClass.m */; };
+		841474DF1C9AAC6A00512FFB /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474D21C9AAC6A00512FFB /* NSObject+MJCoding.m */; };
+		841474E01C9AAC6A00512FFB /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474D41C9AAC6A00512FFB /* NSObject+MJKeyValue.m */; };
+		841474E11C9AAC6A00512FFB /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474D61C9AAC6A00512FFB /* NSObject+MJProperty.m */; };
+		841474E21C9AAC6A00512FFB /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474D81C9AAC6A00512FFB /* NSString+MJExtension.m */; };
+		841474E51C9AB03100512FFB /* LCFoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474E41C9AB03100512FFB /* LCFoodsViewController.m */; };
+		841474E81C9AB07700512FFB /* LCFoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474E71C9AB07700512FFB /* LCFoodItem.m */; };
+		841474EB1C9AC4F100512FFB /* LCFoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841474EA1C9AC4F100512FFB /* LCFoodDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8414745C1C9AA54000512FFB /* LCSplitViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCSplitViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841474601C9AA54000512FFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		841474621C9AA54000512FFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		841474631C9AA54000512FFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		841474651C9AA54000512FFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		841474661C9AA54000512FFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		841474691C9AA54000512FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8414746B1C9AA54000512FFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8414746E1C9AA54000512FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		841474701C9AA54000512FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841474781C9AA68E00512FFB /* LCFoodTypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFoodTypeTableViewController.h; sourceTree = "<group>"; };
+		841474791C9AA68E00512FFB /* LCFoodTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFoodTypeTableViewController.m; sourceTree = "<group>"; };
+		8414747B1C9AA6F900512FFB /* Html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Html; sourceTree = "<group>"; };
+		8414747E1C9AA72800512FFB /* food_types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = food_types.plist; sourceTree = "<group>"; };
+		8414747F1C9AA72800512FFB /* type_10_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_10_foods.plist; sourceTree = "<group>"; };
+		841474801C9AA72800512FFB /* type_11_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_11_foods.plist; sourceTree = "<group>"; };
+		841474811C9AA72800512FFB /* type_12_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_12_foods.plist; sourceTree = "<group>"; };
+		841474821C9AA72800512FFB /* type_13_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_13_foods.plist; sourceTree = "<group>"; };
+		841474831C9AA72800512FFB /* type_14_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_14_foods.plist; sourceTree = "<group>"; };
+		841474841C9AA72800512FFB /* type_15_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_15_foods.plist; sourceTree = "<group>"; };
+		841474851C9AA72800512FFB /* type_16_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_16_foods.plist; sourceTree = "<group>"; };
+		841474861C9AA72800512FFB /* type_1_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_1_foods.plist; sourceTree = "<group>"; };
+		841474871C9AA72800512FFB /* type_2_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_2_foods.plist; sourceTree = "<group>"; };
+		841474881C9AA72800512FFB /* type_3_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_3_foods.plist; sourceTree = "<group>"; };
+		841474891C9AA72800512FFB /* type_4_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_4_foods.plist; sourceTree = "<group>"; };
+		8414748A1C9AA72800512FFB /* type_5_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_5_foods.plist; sourceTree = "<group>"; };
+		8414748B1C9AA72800512FFB /* type_6_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_6_foods.plist; sourceTree = "<group>"; };
+		8414748C1C9AA72800512FFB /* type_7_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_7_foods.plist; sourceTree = "<group>"; };
+		8414748D1C9AA72800512FFB /* type_8_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_8_foods.plist; sourceTree = "<group>"; };
+		8414748E1C9AA72800512FFB /* type_9_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_9_foods.plist; sourceTree = "<group>"; };
+		841474C01C9AA7E400512FFB /* LCFoodType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFoodType.h; sourceTree = "<group>"; };
+		841474C11C9AA7E400512FFB /* LCFoodType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFoodType.m; sourceTree = "<group>"; };
+		841474C41C9AAC6A00512FFB /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		841474C51C9AAC6A00512FFB /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		841474C61C9AAC6A00512FFB /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		841474C71C9AAC6A00512FFB /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		841474C81C9AAC6A00512FFB /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		841474C91C9AAC6A00512FFB /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		841474CA1C9AAC6A00512FFB /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		841474CB1C9AAC6A00512FFB /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		841474CC1C9AAC6A00512FFB /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		841474CD1C9AAC6A00512FFB /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		841474CE1C9AAC6A00512FFB /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		841474CF1C9AAC6A00512FFB /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		841474D01C9AAC6A00512FFB /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		841474D11C9AAC6A00512FFB /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		841474D21C9AAC6A00512FFB /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		841474D31C9AAC6A00512FFB /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		841474D41C9AAC6A00512FFB /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		841474D51C9AAC6A00512FFB /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		841474D61C9AAC6A00512FFB /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		841474D71C9AAC6A00512FFB /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		841474D81C9AAC6A00512FFB /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		841474E31C9AB03100512FFB /* LCFoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFoodsViewController.h; sourceTree = "<group>"; };
+		841474E41C9AB03100512FFB /* LCFoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFoodsViewController.m; sourceTree = "<group>"; };
+		841474E61C9AB07700512FFB /* LCFoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFoodItem.h; sourceTree = "<group>"; };
+		841474E71C9AB07700512FFB /* LCFoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFoodItem.m; sourceTree = "<group>"; };
+		841474E91C9AC4F100512FFB /* LCFoodDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFoodDetailViewController.h; sourceTree = "<group>"; };
+		841474EA1C9AC4F100512FFB /* LCFoodDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFoodDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841474591C9AA54000512FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841474531C9AA54000512FFB = {
+			isa = PBXGroup;
+			children = (
+				8414745E1C9AA54000512FFB /* LCSplitViewController */,
+				8414745D1C9AA54000512FFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8414745D1C9AA54000512FFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8414745C1C9AA54000512FFB /* LCSplitViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8414745E1C9AA54000512FFB /* LCSplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841474761C9AA66500512FFB /* Food */,
+				841474771C9AA66500512FFB /* FoodType */,
+				841474621C9AA54000512FFB /* AppDelegate.h */,
+				841474631C9AA54000512FFB /* AppDelegate.m */,
+				841474651C9AA54000512FFB /* ViewController.h */,
+				841474661C9AA54000512FFB /* ViewController.m */,
+				841474681C9AA54000512FFB /* Main.storyboard */,
+				8414746B1C9AA54000512FFB /* Assets.xcassets */,
+				841474C31C9AAC6A00512FFB /* MJExtension */,
+				8414747B1C9AA6F900512FFB /* Html */,
+				8414746D1C9AA54000512FFB /* LaunchScreen.storyboard */,
+				8414747D1C9AA72800512FFB /* Plist */,
+				841474701C9AA54000512FFB /* Info.plist */,
+				8414745F1C9AA54000512FFB /* Supporting Files */,
+			);
+			path = LCSplitViewController;
+			sourceTree = "<group>";
+		};
+		8414745F1C9AA54000512FFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841474601C9AA54000512FFB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841474761C9AA66500512FFB /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				841474E31C9AB03100512FFB /* LCFoodsViewController.h */,
+				841474E41C9AB03100512FFB /* LCFoodsViewController.m */,
+				841474E61C9AB07700512FFB /* LCFoodItem.h */,
+				841474E71C9AB07700512FFB /* LCFoodItem.m */,
+				841474E91C9AC4F100512FFB /* LCFoodDetailViewController.h */,
+				841474EA1C9AC4F100512FFB /* LCFoodDetailViewController.m */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		841474771C9AA66500512FFB /* FoodType */ = {
+			isa = PBXGroup;
+			children = (
+				841474781C9AA68E00512FFB /* LCFoodTypeTableViewController.h */,
+				841474791C9AA68E00512FFB /* LCFoodTypeTableViewController.m */,
+				841474C01C9AA7E400512FFB /* LCFoodType.h */,
+				841474C11C9AA7E400512FFB /* LCFoodType.m */,
+			);
+			path = FoodType;
+			sourceTree = "<group>";
+		};
+		8414747D1C9AA72800512FFB /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				8414747E1C9AA72800512FFB /* food_types.plist */,
+				8414747F1C9AA72800512FFB /* type_10_foods.plist */,
+				841474801C9AA72800512FFB /* type_11_foods.plist */,
+				841474811C9AA72800512FFB /* type_12_foods.plist */,
+				841474821C9AA72800512FFB /* type_13_foods.plist */,
+				841474831C9AA72800512FFB /* type_14_foods.plist */,
+				841474841C9AA72800512FFB /* type_15_foods.plist */,
+				841474851C9AA72800512FFB /* type_16_foods.plist */,
+				841474861C9AA72800512FFB /* type_1_foods.plist */,
+				841474871C9AA72800512FFB /* type_2_foods.plist */,
+				841474881C9AA72800512FFB /* type_3_foods.plist */,
+				841474891C9AA72800512FFB /* type_4_foods.plist */,
+				8414748A1C9AA72800512FFB /* type_5_foods.plist */,
+				8414748B1C9AA72800512FFB /* type_6_foods.plist */,
+				8414748C1C9AA72800512FFB /* type_7_foods.plist */,
+				8414748D1C9AA72800512FFB /* type_8_foods.plist */,
+				8414748E1C9AA72800512FFB /* type_9_foods.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		841474C31C9AAC6A00512FFB /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				841474C41C9AAC6A00512FFB /* MJExtension.h */,
+				841474C51C9AAC6A00512FFB /* MJExtensionConst.h */,
+				841474C61C9AAC6A00512FFB /* MJExtensionConst.m */,
+				841474C71C9AAC6A00512FFB /* MJFoundation.h */,
+				841474C81C9AAC6A00512FFB /* MJFoundation.m */,
+				841474C91C9AAC6A00512FFB /* MJProperty.h */,
+				841474CA1C9AAC6A00512FFB /* MJProperty.m */,
+				841474CB1C9AAC6A00512FFB /* MJPropertyKey.h */,
+				841474CC1C9AAC6A00512FFB /* MJPropertyKey.m */,
+				841474CD1C9AAC6A00512FFB /* MJPropertyType.h */,
+				841474CE1C9AAC6A00512FFB /* MJPropertyType.m */,
+				841474CF1C9AAC6A00512FFB /* NSObject+MJClass.h */,
+				841474D01C9AAC6A00512FFB /* NSObject+MJClass.m */,
+				841474D11C9AAC6A00512FFB /* NSObject+MJCoding.h */,
+				841474D21C9AAC6A00512FFB /* NSObject+MJCoding.m */,
+				841474D31C9AAC6A00512FFB /* NSObject+MJKeyValue.h */,
+				841474D41C9AAC6A00512FFB /* NSObject+MJKeyValue.m */,
+				841474D51C9AAC6A00512FFB /* NSObject+MJProperty.h */,
+				841474D61C9AAC6A00512FFB /* NSObject+MJProperty.m */,
+				841474D71C9AAC6A00512FFB /* NSString+MJExtension.h */,
+				841474D81C9AAC6A00512FFB /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8414745B1C9AA54000512FFB /* LCSplitViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841474731C9AA54000512FFB /* Build configuration list for PBXNativeTarget "LCSplitViewController" */;
+			buildPhases = (
+				841474581C9AA54000512FFB /* Sources */,
+				841474591C9AA54000512FFB /* Frameworks */,
+				8414745A1C9AA54000512FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCSplitViewController;
+			productName = LCSplitViewController;
+			productReference = 8414745C1C9AA54000512FFB /* LCSplitViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841474541C9AA54000512FFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = LC;
+				TargetAttributes = {
+					8414745B1C9AA54000512FFB = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9SSYV8QFM8;
+					};
+				};
+			};
+			buildConfigurationList = 841474571C9AA54000512FFB /* Build configuration list for PBXProject "LCSplitViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841474531C9AA54000512FFB;
+			productRefGroup = 8414745D1C9AA54000512FFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8414745B1C9AA54000512FFB /* LCSplitViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8414745A1C9AA54000512FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8414746F1C9AA54000512FFB /* LaunchScreen.storyboard in Resources */,
+				841474911C9AA72800512FFB /* type_11_foods.plist in Resources */,
+				841474991C9AA72800512FFB /* type_3_foods.plist in Resources */,
+				8414749E1C9AA72800512FFB /* type_8_foods.plist in Resources */,
+				8414747C1C9AA6F900512FFB /* Html in Resources */,
+				841474921C9AA72800512FFB /* type_12_foods.plist in Resources */,
+				8414746C1C9AA54000512FFB /* Assets.xcassets in Resources */,
+				841474941C9AA72800512FFB /* type_14_foods.plist in Resources */,
+				8414748F1C9AA72800512FFB /* food_types.plist in Resources */,
+				8414749F1C9AA72800512FFB /* type_9_foods.plist in Resources */,
+				841474981C9AA72800512FFB /* type_2_foods.plist in Resources */,
+				8414749B1C9AA72800512FFB /* type_5_foods.plist in Resources */,
+				841474971C9AA72800512FFB /* type_1_foods.plist in Resources */,
+				841474951C9AA72800512FFB /* type_15_foods.plist in Resources */,
+				8414749A1C9AA72800512FFB /* type_4_foods.plist in Resources */,
+				8414746A1C9AA54000512FFB /* Main.storyboard in Resources */,
+				841474901C9AA72800512FFB /* type_10_foods.plist in Resources */,
+				8414749C1C9AA72800512FFB /* type_6_foods.plist in Resources */,
+				841474931C9AA72800512FFB /* type_13_foods.plist in Resources */,
+				841474961C9AA72800512FFB /* type_16_foods.plist in Resources */,
+				8414749D1C9AA72800512FFB /* type_7_foods.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841474581C9AA54000512FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841474C21C9AA7E400512FFB /* LCFoodType.m in Sources */,
+				841474DA1C9AAC6A00512FFB /* MJFoundation.m in Sources */,
+				841474E01C9AAC6A00512FFB /* NSObject+MJKeyValue.m in Sources */,
+				841474671C9AA54000512FFB /* ViewController.m in Sources */,
+				841474DB1C9AAC6A00512FFB /* MJProperty.m in Sources */,
+				841474DC1C9AAC6A00512FFB /* MJPropertyKey.m in Sources */,
+				841474DD1C9AAC6A00512FFB /* MJPropertyType.m in Sources */,
+				841474DE1C9AAC6A00512FFB /* NSObject+MJClass.m in Sources */,
+				841474E21C9AAC6A00512FFB /* NSString+MJExtension.m in Sources */,
+				841474641C9AA54000512FFB /* AppDelegate.m in Sources */,
+				841474E11C9AAC6A00512FFB /* NSObject+MJProperty.m in Sources */,
+				841474E51C9AB03100512FFB /* LCFoodsViewController.m in Sources */,
+				841474EB1C9AC4F100512FFB /* LCFoodDetailViewController.m in Sources */,
+				841474DF1C9AAC6A00512FFB /* NSObject+MJCoding.m in Sources */,
+				841474E81C9AB07700512FFB /* LCFoodItem.m in Sources */,
+				8414747A1C9AA68E00512FFB /* LCFoodTypeTableViewController.m in Sources */,
+				841474D91C9AAC6A00512FFB /* MJExtensionConst.m in Sources */,
+				841474611C9AA54000512FFB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		841474681C9AA54000512FFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841474691C9AA54000512FFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8414746D1C9AA54000512FFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8414746E1C9AA54000512FFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841474711C9AA54000512FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		841474721C9AA54000512FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841474741C9AA54000512FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LCSplitViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.23.LCSplitViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		841474751C9AA54000512FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LCSplitViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.23.LCSplitViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841474571C9AA54000512FFB /* Build configuration list for PBXProject "LCSplitViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841474711C9AA54000512FFB /* Debug */,
+				841474721C9AA54000512FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841474731C9AA54000512FFB /* Build configuration list for PBXNativeTarget "LCSplitViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841474741C9AA54000512FFB /* Debug */,
+				841474751C9AA54000512FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841474541C9AA54000512FFB /* Project object */;
+}

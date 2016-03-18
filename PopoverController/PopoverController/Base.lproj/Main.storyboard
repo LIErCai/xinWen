@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3gK-i6-gZp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jcs-Fr-lhf">
+            <objects>
+                <navigationController id="3gK-i6-gZp" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wHJ-Sd-gMX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NCe-9h-eeh" kind="relationship" relationship="rootViewController" id="GsB-tu-lqW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N35-WD-GO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-155" y="106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="boa-0X-905">
+            <objects>
+                <viewController id="NCe-9h-eeh" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Na8-Fc-b4L"/>
+                        <viewControllerLayoutGuide type="bottom" id="EtM-f3-v36"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sqa-OJ-ZRc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDb-Ga-XWE">
+                                <rect key="frame" x="121" y="253" width="110" height="119"/>
+                                <color key="backgroundColor" red="0.297365938" green="0.8534690989" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="颜色选择"/>
+                                <connections>
+                                    <action selector="colorButtonClicked:" destination="NCe-9h-eeh" eventType="touchUpInside" id="kGQ-V1-xpE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gEq-f9-iY7">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="fmT-1n-7ox">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Un-wb-Zow">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="菜单"/>
+                                <connections>
+                                    <action selector="menuClicked:" destination="NCe-9h-eeh" eventType="touchUpInside" id="1W1-n1-fTw"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DQB-bp-KXE">
+                            <rect key="frame" x="113" y="7" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="标题"/>
+                            <connections>
+                                <action selector="titleClicked:" destination="NCe-9h-eeh" eventType="touchUpInside" id="shS-pO-qZo"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="colorButton" destination="fDb-Ga-XWE" id="BDd-iw-RgL"/>
+                        <outlet property="leftItem" destination="8Un-wb-Zow" id="CtO-JT-LcO"/>
+                        <outlet property="titleItem" destination="DQB-bp-KXE" id="s9J-oO-XwU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ch-da-ohl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306.5" y="71.5"/>
+        </scene>
+    </scenes>
+</document>
