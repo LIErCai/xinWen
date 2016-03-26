@@ -34,12 +34,21 @@
   
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:touch.view];
+    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.blueView snapToPoint:point];
+    snap.damping = 2;
+    [self.animator removeAllBehaviors];
+    [self.animator addBehavior:snap];
+}
+- (void)test3
 {
     UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[self.blueView]];
     UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[self.blueView, self.sefmentControl]];
     
-//    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(10, 10, 300, 500)];
+    //    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(10, 10, 300, 500)];
     
     UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(10, 100, 300, 300)];
     [collision addBoundaryWithIdentifier:@"cirlce" forPath:path];
@@ -47,7 +56,6 @@
     [self.animator addBehavior:gravity];
     [self.animator addBehavior:collision];
 }
-
 - (void)test2
 {
     UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[self.blueView]];
