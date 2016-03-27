@@ -42,6 +42,7 @@
 		8403204C1CA6DC9200F3FD51 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 840320411CA6DC9100F3FD51 /* NSString+MJExtension.m */; };
 		8403204F1CA6DCAF00F3FD51 /* LCMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403204E1CA6DCAF00F3FD51 /* LCMusic.m */; };
 		840320521CA6E3ED00F3FD51 /* LCAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 840320511CA6E3ED00F3FD51 /* LCAudioTool.m */; };
+		8410BC5F1CA819B500B81F2D /* LCMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410BC5E1CA819B500B81F2D /* LCMusicCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,8 @@
 		8403204E1CA6DCAF00F3FD51 /* LCMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMusic.m; sourceTree = "<group>"; };
 		840320501CA6E3ED00F3FD51 /* LCAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAudioTool.h; sourceTree = "<group>"; };
 		840320511CA6E3ED00F3FD51 /* LCAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAudioTool.m; sourceTree = "<group>"; };
+		8410BC5D1CA819B500B81F2D /* LCMusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMusicCell.h; sourceTree = "<group>"; };
+		8410BC5E1CA819B500B81F2D /* LCMusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMusicCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,23 +133,13 @@
 		84031FF01CA6DAE200F3FD51 /* 音乐播放器 */ = {
 			isa = PBXGroup;
 			children = (
-				840320501CA6E3ED00F3FD51 /* LCAudioTool.h */,
-				840320511CA6E3ED00F3FD51 /* LCAudioTool.m */,
+				8410BC5C1CA8194F00B81F2D /* Model */,
+				8410BC5B1CA8194500B81F2D /* View */,
+				8410BC5A1CA8193C00B81F2D /* Controller */,
 				84031FF41CA6DAE200F3FD51 /* AppDelegate.h */,
 				84031FF51CA6DAE200F3FD51 /* AppDelegate.m */,
-				84031FF71CA6DAE200F3FD51 /* ViewController.h */,
-				84031FF81CA6DAE200F3FD51 /* ViewController.m */,
-				84031FFA1CA6DAE200F3FD51 /* Main.storyboard */,
-				84031FFD1CA6DAE200F3FD51 /* Assets.xcassets */,
-				84031FFF1CA6DAE200F3FD51 /* LaunchScreen.storyboard */,
 				8403202A1CA6DC9100F3FD51 /* MJExtension */,
-				840320021CA6DAE200F3FD51 /* Info.plist */,
-				840320081CA6DC1500F3FD51 /* Images */,
-				840320131CA6DC1500F3FD51 /* MP3s */,
-				840320191CA6DC1500F3FD51 /* Musics.plist */,
 				84031FF11CA6DAE200F3FD51 /* Supporting Files */,
-				8403204D1CA6DCAF00F3FD51 /* LCMusic.h */,
-				8403204E1CA6DCAF00F3FD51 /* LCMusic.m */,
 			);
 			path = "音乐播放器";
 			sourceTree = "<group>";
@@ -154,6 +147,13 @@
 		84031FF11CA6DAE200F3FD51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84031FFD1CA6DAE200F3FD51 /* Assets.xcassets */,
+				84031FFA1CA6DAE200F3FD51 /* Main.storyboard */,
+				840320021CA6DAE200F3FD51 /* Info.plist */,
+				84031FFF1CA6DAE200F3FD51 /* LaunchScreen.storyboard */,
+				840320191CA6DC1500F3FD51 /* Musics.plist */,
+				840320081CA6DC1500F3FD51 /* Images */,
+				840320131CA6DC1500F3FD51 /* MP3s */,
 				84031FF21CA6DAE200F3FD51 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -216,6 +216,35 @@
 				840320411CA6DC9100F3FD51 /* NSString+MJExtension.m */,
 			);
 			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		8410BC5A1CA8193C00B81F2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84031FF71CA6DAE200F3FD51 /* ViewController.h */,
+				84031FF81CA6DAE200F3FD51 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8410BC5B1CA8194500B81F2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8410BC5D1CA819B500B81F2D /* LCMusicCell.h */,
+				8410BC5E1CA819B500B81F2D /* LCMusicCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8410BC5C1CA8194F00B81F2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8403204D1CA6DCAF00F3FD51 /* LCMusic.h */,
+				8403204E1CA6DCAF00F3FD51 /* LCMusic.m */,
+				840320501CA6E3ED00F3FD51 /* LCAudioTool.h */,
+				840320511CA6E3ED00F3FD51 /* LCAudioTool.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +349,7 @@
 				8403204C1CA6DC9200F3FD51 /* NSString+MJExtension.m in Sources */,
 				84031FF31CA6DAE200F3FD51 /* main.m in Sources */,
 				840320421CA6DC9100F3FD51 /* MJDictionaryCache.m in Sources */,
+				8410BC5F1CA819B500B81F2D /* LCMusicCell.m in Sources */,
 				840320461CA6DC9200F3FD51 /* MJPropertyKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +497,7 @@
 				840320071CA6DAE200F3FD51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

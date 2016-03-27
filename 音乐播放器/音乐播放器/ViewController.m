@@ -11,15 +11,37 @@
 #import "LCMusic.h"
 #import  "LCAudioTool.h"
 #import <AVFoundation/AVFoundation.h>
-@interface ViewController ()
+#import "LCMusicCell.h"
+@interface ViewController ()<AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) NSArray *musics;
 @property (nonatomic, strong) AVAudioPlayer *currentPlayingAudioPlayer;
+@property (nonatomic, strong) CADisplayLink *link;
+
 
 @end
 
 @implementation ViewController
+- (IBAction)jump:(id)sender {
+    
+    self.currentPlayingAudioPlayer.currentTime = self.currentPlayingAudioPlayer.duration - 5;
+}
 
+- (CADisplayLink *)link
+{
+    if (_link == nil)
+    {
+        _link = [CADisplayLink displayLinkWithTarget:self selector:@selector(change)];
+    }
+    return _link;
+}
+
+- (void)change
+{
+    CGFloat angle = self.link.duration *M_PI_4;
+    LCMusicCell *cell = [self.tableView cellForRowAtIndexPath:[self.tableView indexPathForSelectedRow]];
+    cell.imageView.transform = CGAffineTransformRotate(cell.imageView.transform, angle);
+}
 - (NSArray *)musics{
     if (_musics == nil)
     {
@@ -40,41 +62,57 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+    LCMusicCell *cell = [LCMusicCell cellWithTableView:tableView];
     LCMusic *music = self.musics[indexPath.row];
-    cell.textLabel.text = music.name;
-    cell.detailTextLabel.text = music.singer;
-    cell.imageView.image = [self setHeaderImage:music.icon];
+    cell.music = music;
     return cell;
 }
 
-- (UIImage *)setHeaderImage:(NSString  *)name
-{
-    UIImage *image = [UIImage imageNamed:name];
-    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
-    [path addClip];
-    [image drawAtPoint:CGPointZero];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
-}
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     LCMusic *music  = self.musics[indexPath.row];
     [LCAudioTool stopMusic:music.filename];
+    music.playing = NO;
+    LCMusicCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.imageView.transform = CGAffineTransformIdentity;
     
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     LCMusic *music = self.musics[indexPath.row];
+    
     AVAudioPlayer *audioPlayer = [LCAudioTool playMusic:music.filename];
+    audioPlayer.delegate = self;
     self.currentPlayingAudioPlayer = audioPlayer;
+    
+    
+    [self.link invalidate];
+    self.link = nil;
+    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    music.playing = YES;
+//    CGFloat angle = self.link.duration *M_PI_4;
+//    LCMusicCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+//    cell.imageView.transform = CGAffineTransformRotate(cell.imageView.transform, angle);
 }
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    NSIndexPath *selectedPath = [self.tableView indexPathForSelectedRow];
+    NSInteger nextRow = selectedPath.row + 1;
+    if (nextRow == self.musics.count)
+    {
+        nextRow = 0;
+    }
+    
+    LCMusic *music = self.musics[selectedPath.row];
+    music.playing = NO;
+    LCMusicCell *cell = [self.tableView cellForRowAtIndexPath:selectedPath];
+    cell.imageView.transform = CGAffineTransformIdentity;
+    NSIndexPath *currentPath = [NSIndexPath indexPathForRow:nextRow inSection:selectedPath.section];
+    
+    [self.tableView selectRowAtIndexPath:currentPath animated:YES scrollPosition:UITableViewScrollPositionTop];
+    [self tableView:self.tableView didSelectRowAtIndexPath:currentPath];
+}
+
 @end

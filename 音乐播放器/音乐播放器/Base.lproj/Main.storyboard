@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wHY-Nt-u0U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aNH-gH-hBe">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VRY-hG-n9g">
+            <objects>
+                <navigationController id="aNH-gH-hBe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cYP-6U-94k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wHY-Nt-u0U" kind="relationship" relationship="rootViewController" id="j6l-KE-3pn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjo-rH-VrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="111"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="kCZ-48-b66">
             <objects>
@@ -14,8 +30,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="pbr-bE-hGx" detailTextLabel="FD5-mg-u90" style="IBUITableViewCellStyleSubtitle" id="FC1-3g-lKc">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="pbr-bE-hGx" detailTextLabel="FD5-mg-u90" style="IBUITableViewCellStyleSubtitle" id="FC1-3g-lKc" customClass="LCMusicCell">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FC1-3g-lKc" id="jAp-1f-8mL">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -44,11 +60,18 @@
                             <outlet property="delegate" destination="wHY-Nt-u0U" id="RJb-O4-gFv"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="dME-uD-Am7">
+                        <barButtonItem key="leftBarButtonItem" title="jump" id="3Zd-QM-oBo">
+                            <connections>
+                                <action selector="jump:" destination="wHY-Nt-u0U" id="lxj-uo-slh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7A-Tm-M6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="233"/>
+            <point key="canvasLocation" x="-212.5" y="175.5"/>
         </scene>
     </scenes>
 </document>

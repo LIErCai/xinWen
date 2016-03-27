@@ -16,4 +16,5 @@
 @property (nonatomic, strong) NSString *icon;
 @property (nonatomic, strong) NSString *filename;
 
+@property (nonatomic, assign, getter=isPlaying) BOOL playing;
 @end
