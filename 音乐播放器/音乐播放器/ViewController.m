@@ -11,6 +11,7 @@
 #import "LCMusic.h"
 #import  "LCAudioTool.h"
 #import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 #import "LCMusicCell.h"
 @interface ViewController ()<AVAudioPlayerDelegate>
 
@@ -115,4 +116,29 @@
     [self tableView:self.tableView didSelectRowAtIndexPath:currentPath];
 }
 
+/**
+ *  在锁屏界面显示歌曲信息
+ *
+ *  @param music <#music description#>
+ */
+- (void)showInfoInLockedScreen:(LCMusic *)music
+{
+    
+    NSMutableDictionary *info = [NSMutableDictionary dictionary];
+    info[MPMediaItemPropertyTitle] = music.name;
+    info[MPMediaItemPropertyAlbumArtist] = music.singer;
+    info[MPMediaItemPropertyAlbumTitle] = music.singer;
+    info[MPMediaItemPropertyArtwork] = [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:music.icon]];
+    [MPNowPlayingInfoCenter defaultCenter].nowPlayingInfo = info;
+}
+
+- (void)audioPlayerBeginInterruption:(AVAudioPlayer *)player
+{
+
+}
+
+- (void)audioPlayerEndInterruption:(AVAudioPlayer *)player withOptions:(NSUInteger)flags
+{
+    
+}
 @end

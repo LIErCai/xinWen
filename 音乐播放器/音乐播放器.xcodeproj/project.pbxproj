@@ -43,6 +43,7 @@
 		8403204F1CA6DCAF00F3FD51 /* LCMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403204E1CA6DCAF00F3FD51 /* LCMusic.m */; };
 		840320521CA6E3ED00F3FD51 /* LCAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 840320511CA6E3ED00F3FD51 /* LCAudioTool.m */; };
 		8410BC5F1CA819B500B81F2D /* LCMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8410BC5E1CA819B500B81F2D /* LCMusicCell.m */; };
+		8410BC611CA82FA300B81F2D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8410BC601CA82FA300B81F2D /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		840320511CA6E3ED00F3FD51 /* LCAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAudioTool.m; sourceTree = "<group>"; };
 		8410BC5D1CA819B500B81F2D /* LCMusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMusicCell.h; sourceTree = "<group>"; };
 		8410BC5E1CA819B500B81F2D /* LCMusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMusicCell.m; sourceTree = "<group>"; };
+		8410BC601CA82FA300B81F2D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8410BC611CA82FA300B81F2D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +120,7 @@
 		84031FE51CA6DAE200F3FD51 = {
 			isa = PBXGroup;
 			children = (
+				8410BC601CA82FA300B81F2D /* AVFoundation.framework */,
 				84031FF01CA6DAE200F3FD51 /* 音乐播放器 */,
 				84031FEF1CA6DAE200F3FD51 /* Products */,
 			);
